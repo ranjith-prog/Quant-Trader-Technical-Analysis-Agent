@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 30% 10%; /* Very Dark Blue/Charcoal */
+    --foreground: 220 10% 90%; /* Light Greyish Blue */
+
+    --card: 220 30% 15%; /* Slightly Lighter Dark Blue/Charcoal */
+    --card-foreground: 220 10% 90%;
+
+    --popover: 220 30% 15%;
+    --popover-foreground: 220 10% 90%;
+
+    --primary: 210 70% 50%; /* Deep Rich Blue */
+    --primary-foreground: 0 0% 100%; /* White */
+
+    --secondary: 220 20% 30%; /* Muted Dark Grey/Blue */
+    --secondary-foreground: 220 10% 80%;
+
+    --muted: 220 20% 25%;
+    --muted-foreground: 220 10% 60%;
+
+    --accent: 270 70% 60%; /* Vibrant Electric Purple */
+    --accent-foreground: 0 0% 100%; /* White */
+
+    --destructive: 0 70% 55%; /* A standard red */
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 20% 40%; /* Subtle Border */
+    --input: 220 20% 20%; /* Input Background */
+    --ring: 270 70% 60%; /* Accent for focus rings */
+
+    --radius: 0.5rem;
+
+    /* Chart colors */
+    --chart-1: 210 70% 50%; /* Primary - Deep Rich Blue */
+    --chart-2: 270 70% 60%; /* Accent - Vibrant Electric Purple */
+    --chart-3: 180 70% 50%; /* Bright Teal */
+    --chart-4: 300 70% 60%; /* Magenta/Pink */
+    --chart-5: 45 80% 60%;  /* Gold/Yellow */
+    
+    /* Sidebar variables */
+    --sidebar-background: 220 30% 8%; /* Slightly darker than main background */
+    --sidebar-foreground: 220 10% 85%;
+    --sidebar-primary: 210 70% 50%; 
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 270 70% 60%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 220 20% 35%;
+    --sidebar-ring: 270 70% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
